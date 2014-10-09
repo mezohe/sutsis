@@ -114,12 +114,12 @@
   <meta name="msapplication-TileColor" content="#00a300">
   <meta name="msapplication-TileImage" content="./mstile-144x144.png">
   <meta name="application-name" content="sutsis">
-  <script src='./components/platform/platform.js'></script>
-  <link rel='import' href='./components/polymer/polymer.html'>
+  <script src='./polymer-tutorial/components/platform/platform.js'></script>
+  <link rel='import' href='./polymer-tutorial/components/polymer/polymer.html'>
   <link rel='import'
-        href='./components/core-header-panel/core-header-panel.html'>
+        href='./polymer-tutorial/components/core-header-panel/core-header-panel.html'>
   <link rel='import'
-        href='./components/paper-progress/paper-progress.html'>
+        href='./polymer-tutorial/components/paper-progress/paper-progress.html'>
 </head>
 <body fullbleed layout vertical unresolved>
   <core-header-panel mode='seamed' flex>
@@ -150,7 +150,7 @@
     </div>
   </core-header-panel>
 
-  <script src='./components/jquery/dist/jquery.min.js'></script>
+  <script src='./polymer-tutorial/components/jquery/dist/jquery.min.js'></script>
   <script>
     var limit;
     var typehere = $("#typehere");
@@ -350,20 +350,6 @@
       }
       return +new Date();
     }
-  </script>
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-39779012-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol
-                ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-    })();
   </script>
 </body>
 </html>
