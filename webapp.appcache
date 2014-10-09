@@ -35,15 +35,15 @@ CACHE:
 ./lib/Lato/Lato-Regular.ttf
 ./lib/Lato.css
 
-./polymer-tutorial/components/platform/platform.js
-./polymer-tutorial/components/polymer/polymer.html
-./polymer-tutorial/components/polymer/layout.html
-./polymer-tutorial/components/polymer/polymer.js
-./polymer-tutorial/components/core-header-panel/core-header-panel.html
-./polymer-tutorial/components/core-header-panel/core-header-panel.css
-./polymer-tutorial/components/core-range/core-range.html
-./polymer-tutorial/components/paper-progress/paper-progress.html
-./polymer-tutorial/components/paper-progress/paper-progress.css
+./polymerchromeapp/components/platform/platform.js
+./polymerchromeapp/components/polymer/polymer.html
+./polymerchromeapp/components/polymer/layout.html
+./polymerchromeapp/components/polymer/polymer.js
+./polymerchromeapp/components/core-header-panel/core-header-panel.html
+./polymerchromeapp/components/core-header-panel/core-header-panel.css
+./polymerchromeapp/components/core-range/core-range.html
+./polymerchromeapp/components/paper-progress/paper-progress.html
+./polymerchromeapp/components/paper-progress/paper-progress.css
 http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js
 
 ./favicons/apple-touch-icon-114x114.png
