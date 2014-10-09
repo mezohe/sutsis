@@ -112,7 +112,7 @@
   <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#00a300">
-  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="msapplication-TileImage" content="./mstile-144x144.png">
   <meta name="application-name" content="sutsis">
   <script src='./components/platform/platform.js'></script>
   <link rel='import' href='./components/polymer/polymer.html'>
@@ -152,9 +152,6 @@
 
   <script src='./components/jquery/dist/jquery.min.js'></script>
   <script>
-    if (window.location.host === 'sutsis.appspot.com') {
-      window.location = 'http://sutsis.nomei.la' + window.location.pathname;
-    }
     var limit;
     var typehere = $("#typehere");
     var output = $("#output");
@@ -304,7 +301,7 @@
     typehere.keydown(displayDescription);
 
     function updateUrl(query) {
-      var url = '/';
+      var url = './';
       if (query.length > 0) {
         url = '/search/' + query
       }
