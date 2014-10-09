@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html manifest='/webapp.appcache'>
+<html manifest='./webapp.appcache'>
 <head>
   <title>sutsis: ze'i vlasisku</title>
   <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0" />
-  <link rel='stylesheet' href='/lib/Lato.css'>
+  <link rel='stylesheet' href='./lib/Lato.css'>
   <style type="text/css">
     .container .credit {
       margin: 20px 0;
@@ -96,30 +96,30 @@
     sub { top: 0.4em; }
   </style>
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">
   <meta name="apple-mobile-web-app-title" content="sutsis">
-  <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./favicon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="./favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#00a300">
   <meta name="msapplication-TileImage" content="/mstile-144x144.png">
   <meta name="application-name" content="sutsis">
-  <script src='/components/platform/platform.js'></script>
-  <link rel='import' href='/components/polymer/polymer.html'>
+  <script src='./components/platform/platform.js'></script>
+  <link rel='import' href='./components/polymer/polymer.html'>
   <link rel='import'
-        href='/components/core-header-panel/core-header-panel.html'>
+        href='./components/core-header-panel/core-header-panel.html'>
   <link rel='import'
-        href='/components/paper-progress/paper-progress.html'>
+        href='./components/paper-progress/paper-progress.html'>
 </head>
 <body fullbleed layout vertical unresolved>
   <core-header-panel mode='seamed' flex>
@@ -150,7 +150,7 @@
     </div>
   </core-header-panel>
 
-  <script src='/components/jquery/dist/jquery.min.js'></script>
+  <script src='./components/jquery/dist/jquery.min.js'></script>
   <script>
     if (window.location.host === 'sutsis.appspot.com') {
       window.location = 'http://sutsis.nomei.la' + window.location.pathname;
@@ -160,7 +160,7 @@
     var output = $("#output");
     var description = $("#description");
     var progress = $('#progress');
-    var worker = new Worker('/worker.js');
+    var worker = new Worker('./worker.js');
     var resultCount;
     var results = [];
     var ready = false;
@@ -212,7 +212,7 @@
       });
       s = s.replace(/\{(.*?)\}/g, function(c) {
         var c = c.substring(1, c.length-1);
-        return '<a href="/search/' + encodeURIComponent(c) + '">' + c + "</a>"
+        return '<a href="./search/' + encodeURIComponent(c) + '">' + c + "</a>"
       });
       return s;
     }
