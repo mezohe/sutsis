@@ -44,7 +44,7 @@ CACHE:
 ./polymer-tutorial/components/core-range/core-range.html
 ./polymer-tutorial/components/paper-progress/paper-progress.html
 ./polymer-tutorial/components/paper-progress/paper-progress.css
-./polymer-tutorial/components/jquery/dist/jquery.min.js
+http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js
 
 ./favicons/apple-touch-icon-114x114.png
 ./favicons/apple-touch-icon-120x120.png
